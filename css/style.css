@@ -179,8 +179,8 @@ main {
 }
 
 .project-content img {
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .project-content p {
@@ -269,4 +269,83 @@ footer img {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+/* main page styling */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color-1);
+  border-radius: 6px;
+  padding: 14px;
+  text-decoration: none;
+  color: var(--font);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  
+}
+
+.project-info {
+  margin-top: 12px;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+/* about me styling */
+
+.about-section {
+    padding: 80px 40px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 40px auto;
 }
